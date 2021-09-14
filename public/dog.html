@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOG!</title>
+    </head>
+    <body>
+        <h1>DOG!</h1>
+        <div class="container"></div>
+        <button onclick="fetchDog()">GET A DOG MATE!</button>
+
+        <script>
+            async function fetchDog() {
+                try {
+                    const dog = await fetch("http://localhost:3000/dog/");
+                    const data = await dog.json();
+                    document.querySelector(
+                        ".container"
+                    ).innerHTML = `<img src="${data.message}" alt="DOG!">`;
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        </script>
+    </body>
+</html>
