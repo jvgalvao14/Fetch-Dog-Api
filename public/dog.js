@@ -3,7 +3,7 @@ async function fetchDog() {
         const dog = await fetch("http://localhost:3000/dog/");
         const data = await dog.json();
         document.querySelector(
-            ".container"
+            ".dog-container"
         ).innerHTML = `<img src="${data.message}" alt="DOG!" class="rounded mx-auto d-block" style="max-height: 600px">`;
     } catch (error) {
         console.log(error);

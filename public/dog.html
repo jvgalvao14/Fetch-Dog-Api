@@ -14,17 +14,56 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-light bg-light">
-                <div class="container-fluid justify-content-center">
-                    <button onclick="fetchDog()" class="btn btn-dark">
-                        GET A DOG NOW!
-                    </button>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container d-flex justify-content-center">
+                    <div
+                        class="btn-group"
+                        role="group"
+                        aria-label="Button group with nested dropdown"
+                    >
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            onclick="fetchDog()"
+                        >
+                            Random dog
+                        </button>
+
+                        <div class="btn-group" role="group">
+                            <button
+                                id="btnGroupDrop1"
+                                type="button"
+                                class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                Select a Dog
+                            </button>
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="btnGroupDrop1"
+                            >
+                                <a class="dropdown-item" href="#"
+                                    >Dropdown link</a
+                                >
+                                <a class="dropdown-item" href="#"
+                                    >Dropdown link</a
+                                >
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
 
-        <div class="container"></div>
+        <div class="dog-container" style="padding: 30px"></div>
 
         <script src="dog.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
