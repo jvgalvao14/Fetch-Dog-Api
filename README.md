@@ -20,10 +20,10 @@
 ![yarn dev](https://i.imgur.com/Yn3RDEX.png)
 
 
-- Now you can right click the index.html at the public folder and then "Open with Live Server" (Assuming you have Live Server installed in your VSCode, if you don't, check this http://gg.gg/liveserver)
+- Now you can right click dog.html at the public folder and then "Open with Live Server" (Assuming you have Live Server installed in your VSCode, if you don't, check this http://gg.gg/liveserver)
 
 
 ![Open with Live Server](https://i.imgur.com/DtR04FX.png)
 
-- And now you can get random dog pictures!
+- And now you can get random dog pictures 🐶!
 
