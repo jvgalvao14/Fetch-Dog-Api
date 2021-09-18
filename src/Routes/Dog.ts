@@ -9,4 +9,13 @@ Router.get("/", async (req: Request, res: Response) => {
     res.json(response.data);
 });
 
+Router.get("/breed", async (req: Request, res: Response) => {
+    const breed = req.query.breed;
+    const response = await axios(
+        `https://dog.ceo/api/breed/${breed}/images/random`
+    );
+
+    res.json(response.data);
+});
+
 export default Router;
