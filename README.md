@@ -25,5 +25,5 @@
 
 ![Open with Live Server](https://i.imgur.com/DtR04FX.png)
 
-- And now you can get random dog pictures 🐶!
+- And now you can get random dog pictures or select by breed 🐶!
 
