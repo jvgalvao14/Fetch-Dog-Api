@@ -1,6 +1,6 @@
 async function fetchDog() {
     try {
-        const dog = await fetch("http://localhost:3000/dog/");
+        const dog = await fetch("http://localhost:3003/dog/");
         const data = await dog.json();
         document.querySelector(
             ".dog-container"
@@ -13,7 +13,7 @@ async function fetchDog() {
 async function fetchDogByBreed(breed) {
     try {
         const dog = await fetch(
-            `http://localhost:3000/dog/breed?breed=${breed}`
+            `http://localhost:3003/dog/breed?breed=${breed}`
         );
         const data = await dog.json();
         document.querySelector(
