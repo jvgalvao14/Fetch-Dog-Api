@@ -1,6 +1,7 @@
 async function fetchDog() {
     try {
-        const dog = await fetch("http://localhost:3003/dog/");
+        const port = process.env.PORT || 3003;
+        const dog = await fetch(`http://localhost:${port}/dog/`);
         const data = await dog.json();
         document.querySelector(
             ".dog-container"
@@ -12,8 +13,9 @@ async function fetchDog() {
 
 async function fetchDogByBreed(breed) {
     try {
+        const port = process.env.PORT || 3003;
         const dog = await fetch(
-            `http://localhost:3003/dog/breed?breed=${breed}`
+            `http://localhost:${port}/dog/breed?breed=${breed}`
         );
         const data = await dog.json();
         document.querySelector(
