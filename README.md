@@ -1,6 +1,7 @@
 <h1 align='center'>Get dog pics!</h1>
 
 <p align='center'>This web app will get you dog pictures 🐕. who doesn't love them right?</p>
+<p align='center'>Now <a href="https://getdogpics.herokuapp.com/" target="blank">deployed!</a></p>
 <p align='center'>Under construction 🚧</p>
 
 # Installing
