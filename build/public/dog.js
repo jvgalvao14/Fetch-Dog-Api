@@ -1,8 +1,6 @@
 async function fetchDog() {
-    import port from "../index";
-
     try {
-        const dog = await fetch(`http://localhost:${port}/dog/`);
+        const dog = await fetch(`https://getdogpics.herokuapp.com/dog`);
         const data = await dog.json();
         document.querySelector(
             ".dog-container"
@@ -15,7 +13,7 @@ async function fetchDog() {
 async function fetchDogByBreed(breed) {
     try {
         const dog = await fetch(
-            `http://localhost:${port}/dog/breed?breed=${breed}`
+            `https://getdogpics.herokuapp.com/dog/breed?breed=${breed}`
         );
         const data = await dog.json();
         document.querySelector(
