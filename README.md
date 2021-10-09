@@ -9,14 +9,14 @@
 - Install all dependencies through Yarn.
 
 ```
-    yarn install
+    npm install
 ``` 
 # Starting the API
 
 - After installing everything, run the following command on your terminal to start the API.
 
 ```
-    yarn dev
+    npm run start
 ``` 
 ![yarn dev](https://i.imgur.com/Yn3RDEX.png)
 
