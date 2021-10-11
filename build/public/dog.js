@@ -5,6 +5,9 @@ async function fetchDog() {
         document.querySelector(
             ".dog-container"
         ).innerHTML = `<img src="${data.message}" alt="DOG!" class="rounded mx-auto d-block" style="max-height: 600px">`;
+
+        //hiding the "Another from the same breed" button
+        document.querySelector("#dog-button").innerHTML = "";
     } catch (error) {
         console.log(error);
     }
@@ -19,6 +22,9 @@ async function fetchDogByBreed(breed) {
         document.querySelector(
             ".dog-container"
         ).innerHTML = `<img src="${data.message}" alt="${breed}!" class="rounded mx-auto d-block" style="max-height: 600px">`;
+
+        const dogButton = document.querySelector("#dog-button");
+        dogButton.innerHTML = `<button type="button" class="btn btn-secondary" id="dog-button" onclick="getDogBreed()"> Get another ${breed}!</button>`;
     } catch (error) {
         console.log(error);
     }
